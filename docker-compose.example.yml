@@ -1,0 +1,13 @@
+# build image
+services:
+  web:
+    build: .
+    # image: ghcr.io/3kmfi6hp/argo-airport-paas:main
+    ports:
+      - "3200:3000"
+    # volumes:
+    #   - ./entrypoint.sh:/app/entrypoint.sh:ro
+    #   - ./server.js:/app/server.js:ro
+    # use .env file
+    # env_file:
+      # - .env
